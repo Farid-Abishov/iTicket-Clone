@@ -216,6 +216,34 @@ header .container nav .right_nav .icon_box i:nth-child(4) {
 #events .row .col-xl-3 .event_item .event_cntnt:hover .price {
   transform: translateY(-40px);
 }
+#events .row .col-xl-3 .event_item .event_cntnt:hover p {
+  left: 10px;
+  bottom: -11px;
+  font-size: 13px;
+  color: rgba(119, 116, 116, 0.944);
+}
+#events .row .col-xl-3 .event_item .event_cntnt:hover span {
+  opacity: 1;
+  bottom: 17px;
+}
+#events .row .col-xl-3 .event_item .event_cntnt p {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  color: rgba(255, 255, 255, 0.7294117647);
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+#events .row .col-xl-3 .event_item .event_cntnt span {
+  position: absolute;
+  bottom: 3px;
+  left: 10px;
+  color: black;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+}
 #events .row .col-xl-3 .event_item .event_cntnt .price {
   position: absolute;
   bottom: 10px;
@@ -230,9 +258,6 @@ header .container nav .right_nav .icon_box i:nth-child(4) {
 #events .row .col-xl-3 .event_item .event_cntnt .price a {
   text-decoration: none;
   color: black;
-}
-#events .row .col-xl-3 .event_item p {
-  display: none;
 }
 
 #children {

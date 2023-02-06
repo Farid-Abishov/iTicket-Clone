@@ -171,6 +171,7 @@ header{
       .col-xl-3{
         position: relative;
         .event_item{
+            
             background-color: rgba(139, 137, 137, 0.773);
             border-radius: 10px;
             overflow: hidden;
@@ -208,6 +209,34 @@ header{
                    .price{
                     transform: translateY(-40px);
                    }
+                   p{
+                    left: 10px;
+                    bottom: -11px;
+                    font-size: 13px;
+                    color: rgba(119, 116, 116, 0.944);
+                   }
+                   span{
+                    opacity: 1;
+                    bottom: 17px;
+                   }
+                }
+                p{
+                    position: absolute;
+                    left: 10px;
+                    bottom: 5px;
+                    color: #ffffffba;
+                    font-size: 17px;
+                    font-weight: 600;
+                    transition: all .2s ease-in-out;
+                }
+                span{
+                    position: absolute;
+                    bottom: 3px;
+                    left: 10px;
+                    color: black;
+                    opacity: 0;
+                    transition: all .2s ease-in-out;
+                    font-weight: 700;
                 }
                 .price{
                     position: absolute;
@@ -225,9 +254,7 @@ header{
                     }
                 }
             }
-            p{
-                display: none;
-            }
+           
         }
       }
     }
