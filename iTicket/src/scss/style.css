@@ -32,6 +32,9 @@ header .container nav .left_nav svg {
   width: 150px;
   display: inline-block;
 }
+header .container nav .left_nav svg .text-color {
+  fill: #fff;
+}
 header .container nav .mid_nav {
   display: flex;
   padding-top: 8px;
@@ -79,6 +82,8 @@ header .container nav .mid_nav .nav_links .links-items li .link_cntnt img {
 }
 header .container nav .mid_nav .nav_links .links-items li:hover .link_cntnt img {
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header .container nav .mid_nav .nav_links .links-items li:nth-child(7) {
   position: relative;

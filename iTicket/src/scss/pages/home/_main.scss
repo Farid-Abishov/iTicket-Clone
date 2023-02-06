@@ -22,7 +22,11 @@ header{
                 svg{
                     width: 150px;
                     display: inline-block;
+                    .text-color{
+                        fill: #fff;
+                    }
                 }
+               
             }
             .mid_nav{
                 @media(max-width:768px){
@@ -71,6 +75,7 @@ header{
                                 .link_cntnt{
                                     img{
                                         display: block;
+                                        object-fit: cover;
                                     }
                                 }
                             }
