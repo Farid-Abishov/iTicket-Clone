@@ -1,8 +1,26 @@
+body{
+    overflow-x: hidden;
+}
 header{
+    &::before{
+        position: absolute;
+        --tw-bg-opacity: 1;
+        background-color: rgba(255,221,0,var(--tw-bg-opacity));
+        content: "";
+        width: 200vw;
+        left: calc(50% - 23px);
+        top: 0;
+        padding-top: 20%;
+        transform: translateX(-50%) rotate(-33deg);
+        
+    }
+    padding-top: 30px;
+    @media(max-width:768px){
+     padding: 0;
+    }
     .container{
         position: relative;
         height: 85vh;
-        margin-top: 20px;
         border-radius: 20px;
         background-position: center;
         background-size: cover;
@@ -12,12 +30,14 @@ header{
             width: auto;
             height: 300px;
             border-radius: 0px;
-            margin-top: 0px;
         }
         nav{
             display: flex;
             justify-content: space-around;
             padding:40px 10px;
+            @media(max-width:768px){
+            padding: 0px;
+            }
             .left_nav{
                 svg{
                     width: 150px;
@@ -140,7 +160,6 @@ header{
     .event_title{
         font-size: 24px;
         font-weight:700;
-        display: inline-block;
         margin-left: 250px;
         color: black;
         @media (max-width:768px){
@@ -212,4 +231,8 @@ header{
         }
       }
     }
+}
+#children{
+    background: linear-gradient(to bottom right,#fd0 0,#fd0 50%,transparent 0,transparent);
+     height: 70vh;
 }
