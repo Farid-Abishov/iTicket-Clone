@@ -1,0 +1,32 @@
+@mixin title(
+    $font_size,
+    $font_w,
+    $mrgn_lft,
+    $color
+){
+  font-size: $font_size;
+  font-weight: $font_w;
+  margin-left: $mrgn_lft;
+  color: $color;
+}
+
+
+@mixin image($width,$height,$obj_fit,$br_r,$transtn){
+   width: $width;
+   height: $height;
+   object-fit: $obj_fit;
+   border-radius: $br_r;
+   transition: $transtn;
+}
+@mixin item_container($bckgrn_clr,$br_r,$ovrlfw,$transtn){
+   background-color: $bckgrn_clr;
+   border-radius: $br_r;
+   overflow: $ovrlfw;
+   transition: $transtn;
+}
+@mixin item_cntnt($pstn,$top,$left,$height){
+ position: $pstn;
+ top: $top;
+ left: $left;
+ height: $height;
+}
