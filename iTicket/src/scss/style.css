@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-.addcard {
+.addcart {
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -23,11 +23,11 @@ body {
   padding-left: 10px;
 }
 @media (max-width: 768px) {
-  .addcard {
+  .addcart {
     display: none;
   }
 }
-.addcard span {
+.addcart span {
   position: absolute;
   top: -2px;
   left: 24px;
@@ -232,14 +232,15 @@ header .container nav .right_nav .icon_box i:nth-child(4) {
   color: black;
   font-weight: 700;
   border-radius: 50%;
-  width: 40px;
+  width: 37px;
   height: 40pxx;
-  padding-top: 7px;
-  padding-left: 10px;
+  padding-top: 6px;
+  padding-left: 9px;
   display: inline-block;
 }
 @media (max-width: 768px) {
   header .container nav .right_nav .icon_box i:nth-child(4) {
+    margin-top: 3px;
     height: 38pxx;
     display: inline-block;
   }
@@ -330,11 +331,11 @@ header .container nav .right_nav .icon_box i:nth-child(4) {
 #events .row .col-xl-3 .event_item .event_cntnt .price {
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  right: 5px;
   border: none;
+  border-radius: 18px;
   padding: 8px 10px;
   background-color: yellow;
-  border-radius: 18px;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
 }
@@ -430,13 +431,108 @@ header .container nav .right_nav .icon_box i:nth-child(4) {
   bottom: 10px;
   right: 5px;
   border: none;
+  border-radius: 18px;
   padding: 8px 10px;
   background-color: yellow;
-  border-radius: 18px;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
 }
 #children .row .col-xl-3 .child_item .child_cntnt .price a {
+  text-decoration: none;
+  color: black;
+}
+
+#tourism p {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 250px;
+  color: black;
+}
+@media (max-width: 768px) {
+  #tourism p {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+}
+#tourism .row {
+  padding-bottom: 100px;
+}
+#tourism .row .col-xl-3 {
+  position: relative;
+}
+#tourism .row .col-xl-3 .tourism_item {
+  background-color: rgba(139, 137, 137, 0.773);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+#tourism .row .col-xl-3 .tourism_item:hover {
+  background-color: #fff;
+}
+#tourism .row .col-xl-3 .tourism_item:hover img {
+  transform: translateY(-30px);
+}
+#tourism .row .col-xl-3 .tourism_item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+#tourism .row .col-xl-3 .tourism_item .tourism_cntnt {
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  height: 100%;
+}
+#tourism .row .col-xl-3 .tourism_item .tourism_cntnt:hover img {
+  transform: translateY(-40px);
+  cursor: pointer;
+}
+#tourism .row .col-xl-3 .tourism_item .tourism_cntnt:hover .price {
+  transform: translateY(-40px);
+}
+#tourism .row .col-xl-3 .tourism_item .tourism_cntnt:hover p {
+  bottom: -15px;
+  left: -240px;
+  font-size: 13px;
+  color: rgba(119, 116, 116, 0.944);
+}
+#tourism .row .col-xl-3 .tourism_item .tourism_cntnt:hover span {
+  opacity: 1;
+  bottom: 13px;
+}
+#tourism .row .col-xl-3 .tourism_item .tourism_cntnt p {
+  position: absolute;
+  left: -245px;
+  bottom: 6px;
+  color: rgba(153, 150, 150, 0.8470588235);
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+#tourism .row .col-xl-3 .tourism_item .tourism_cntnt span {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  color: black;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+}
+#tourism .row .col-xl-3 .tourism_item .tourism_cntnt .price {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  border: none;
+  border-radius: 18px;
+  padding: 8px 10px;
+  background-color: yellow;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+#tourism .row .col-xl-3 .tourism_item .tourism_cntnt .price a {
   text-decoration: none;
   color: black;
 }/*# sourceMappingURL=style.css.map */
