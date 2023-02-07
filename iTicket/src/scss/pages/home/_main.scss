@@ -454,3 +454,77 @@ header{
          }
       }
 }
+#theatre{
+    p{
+        @include title(24px,700,250px,black);
+         @media (max-width:768px){
+             margin-left: 20px;
+             font-size: 20px;
+         }
+      }
+      .row{
+          padding-bottom: 100px;
+           .col-xl-3{
+             position: relative;
+             .theatre_item{
+               @include item_container(rgba(139, 137, 137, 0.773),10px,hidden,all .3s ease-in-out);
+               &:hover{
+                   background-color: #fff;
+                   img{
+                       transform: translateY(-30px);
+                   }
+               }
+                img{
+                   @include image(100%,100%,cover,10px,all .2s ease-in-out);
+               }    
+               .theatre_cntnt{
+                   @include item_cntnt(absolute,0px,8px,100%);
+                   &:hover{
+                       img{
+                        transform: translateY(-40px);
+                        cursor: pointer;
+                       }
+                       .price{
+                        transform: translateY(-40px);
+                       }
+                       p{
+                        bottom: -15px;
+                        left: -240px;
+                        font-size: 13px;
+                        color: rgba(119, 116, 116, 0.944);
+                       }
+                       span{
+                        opacity: 1;
+                        bottom: 13px;
+                       }
+                    }
+                   p{
+                       position: absolute;
+                       left: -245px;
+                       bottom: 6px;
+                       color: #535151c9;
+                       font-size: 17px;
+                       font-weight: 600;
+                       transition: all .2s ease-in-out;
+                   }
+                   span{
+                       position: absolute;
+                       bottom: 2px;
+                       left: 10px;
+                       color: black;
+                       opacity: 0;
+                       transition: all .2s ease-in-out;
+                       font-weight: 700;
+                   }
+                   .price{
+                      @include cntnt_btn(absolute,10px,5px,none,18px, 8px 10px,yellow,700,all .2s ease-in-out);
+                       a{
+                           text-decoration: none;
+                           color: black;
+                       }
+                   }
+               }
+             }
+           }
+        }
+}
