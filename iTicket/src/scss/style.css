@@ -630,4 +630,102 @@ header .container nav .right_nav .icon_box i:nth-child(4) {
 #theatre .row .col-xl-3 .theatre_item .theatre_cntnt .price a {
   text-decoration: none;
   color: black;
+}
+
+#new {
+  background: linear-gradient(to bottom right, #fd0 0, #fd0 50%, transparent 0, transparent);
+}
+#new p {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 250px;
+  color: black;
+}
+@media (max-width: 768px) {
+  #new p {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+}
+#new .row {
+  padding-bottom: 100px;
+}
+#new .row .col-xl-3 {
+  position: relative;
+}
+#new .row .col-xl-3 .new_item {
+  background-color: rgba(139, 137, 137, 0.773);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+#new .row .col-xl-3 .new_item:hover {
+  background-color: #fff;
+}
+#new .row .col-xl-3 .new_item:hover img {
+  transform: translateY(-30px);
+}
+#new .row .col-xl-3 .new_item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+#new .row .col-xl-3 .new_item .new_cntnt {
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  height: 100%;
+}
+#new .row .col-xl-3 .new_item .new_cntnt:hover img {
+  transform: translateY(-40px);
+  cursor: pointer;
+}
+#new .row .col-xl-3 .new_item .new_cntnt:hover .price {
+  transform: translateY(-40px);
+}
+#new .row .col-xl-3 .new_item .new_cntnt:hover p {
+  bottom: -15px;
+  left: -240px;
+  font-size: 13px;
+  color: rgba(119, 116, 116, 0.944);
+}
+#new .row .col-xl-3 .new_item .new_cntnt:hover span {
+  opacity: 1;
+  bottom: 13px;
+}
+#new .row .col-xl-3 .new_item .new_cntnt p {
+  position: absolute;
+  left: -245px;
+  bottom: 6px;
+  color: rgba(83, 81, 81, 0.7882352941);
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+#new .row .col-xl-3 .new_item .new_cntnt span {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  color: black;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+}
+#new .row .col-xl-3 .new_item .new_cntnt .price {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  border: none;
+  border-radius: 18px;
+  padding: 8px 10px;
+  background-color: yellow;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+#new .row .col-xl-3 .new_item .new_cntnt .price a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
