@@ -501,7 +501,7 @@ header .container nav .right_nav .icon_box i:nth-child(4) {
 }
 #tourism .row .col-xl-3 .tourism_item .tourism_cntnt:hover span {
   opacity: 1;
-  bottom: 13px;
+  bottom: 11px;
 }
 #tourism .row .col-xl-3 .tourism_item .tourism_cntnt p {
   position: absolute;
@@ -596,13 +596,13 @@ header .container nav .right_nav .icon_box i:nth-child(4) {
 }
 #theatre .row .col-xl-3 .theatre_item .theatre_cntnt:hover span {
   opacity: 1;
-  bottom: 13px;
+  bottom: 11px;
 }
 #theatre .row .col-xl-3 .theatre_item .theatre_cntnt p {
   position: absolute;
   left: -245px;
   bottom: 6px;
-  color: rgba(83, 81, 81, 0.7882352941);
+  color: rgba(190, 185, 185, 0.7882352941);
   font-size: 17px;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
@@ -694,13 +694,13 @@ header .container nav .right_nav .icon_box i:nth-child(4) {
 }
 #new .row .col-xl-3 .new_item .new_cntnt:hover span {
   opacity: 1;
-  bottom: 13px;
+  bottom: 11px;
 }
 #new .row .col-xl-3 .new_item .new_cntnt p {
   position: absolute;
   left: -245px;
   bottom: 6px;
-  color: rgba(83, 81, 81, 0.7882352941);
+  color: rgba(146, 142, 142, 0.7882352941);
   font-size: 17px;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
@@ -728,4 +728,75 @@ header .container nav .right_nav .icon_box i:nth-child(4) {
 #new .row .col-xl-3 .new_item .new_cntnt .price a {
   text-decoration: none;
   color: black;
+}
+
+#appblock .container {
+  width: 950px;
+}
+@media (max-width: 768px) {
+  #appblock .container {
+    width: auto;
+  }
+}
+#appblock .container .row {
+  padding: 30px;
+  background-color: rgb(255, 221, 0);
+  border-radius: 20px;
+  height: 315px;
+}
+#appblock .container .row .col-xl-7 .app_item p {
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 250px;
+}
+#appblock .container .row .col-xl-7 .app_item span {
+  font-size: 14px;
+  color: black;
+}
+#appblock .container .row .col-xl-7 .app_item .appbtns {
+  display: flex;
+  background-color: black;
+  width: 270px;
+  border-radius: 20px;
+  padding: 7px 1px;
+  margin-top: 15px;
+}
+#appblock .container .row .col-xl-7 .app_item .appbtns .ggle {
+  background-color: black;
+  padding: 2px 4px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#appblock .container .row .col-xl-7 .app_item .appbtns .ggle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#appblock .container .row .col-xl-7 .app_item .appbtns span {
+  display: inline-block;
+  background-color: #fff;
+  height: 40px;
+  width: 1px;
+}
+#appblock .container .row .col-xl-5 {
+  position: relative;
+}
+@media (max-width: 768px) {
+  #appblock .container .row .col-xl-5 {
+    display: none;
+  }
+}
+#appblock .container .row .col-xl-5 .app_item_img {
+  height: 347px;
+  width: 216px;
+  position: absolute;
+  bottom: -30px;
+  right: 40px;
+}
+#appblock .container .row .col-xl-5 .app_item_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
