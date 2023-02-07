@@ -57,6 +57,11 @@ header::before {
   transform: translateX(-50%) rotate(-33deg);
 }
 @media (max-width: 768px) {
+  header::before {
+    width: 0;
+  }
+}
+@media (max-width: 768px) {
   header {
     padding: 0;
   }
@@ -72,6 +77,9 @@ header .container {
 }
 @media (max-width: 768px) {
   header .container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: auto;
     height: 300px;
     border-radius: 0px;
@@ -84,15 +92,39 @@ header .container nav {
 }
 @media (max-width: 768px) {
   header .container nav {
-    padding: 0px;
+    background: #fff;
+    width: auto;
+    padding-bottom: -22px;
+    height: 35px;
+    padding-top: 0;
+  }
+}
+header .container nav .bi-bar-chart-steps {
+  display: none;
+}
+@media (max-width: 768px) {
+  header .container nav .bi-bar-chart-steps {
+    display: inline-block;
+    padding-top: 5px;
+    cursor: pointer;
   }
 }
 header .container nav .left_nav svg {
   width: 150px;
   display: inline-block;
 }
+@media (max-width: 768px) {
+  header .container nav .left_nav svg {
+    width: 130px;
+  }
+}
 header .container nav .left_nav svg .text-color {
   fill: #fff;
+}
+@media (max-width: 768px) {
+  header .container nav .left_nav svg .text-color {
+    fill: black;
+  }
 }
 header .container nav .mid_nav {
   display: flex;
@@ -172,22 +204,45 @@ header .container nav .mid_nav .nav_links .links-items li:nth-child(7) ul li a {
 header .container nav .right_nav {
   padding-top: 8px;
 }
+@media (max-width: 768px) {
+  header .container nav .right_nav {
+    padding-top: 0;
+  }
+}
 header .container nav .right_nav .icon_box i {
   margin-right: 15px;
   color: #fff;
   font-size: 18px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  header .container nav .right_nav .icon_box i {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header .container nav .right_nav .icon_box i:nth-child(3) {
+    color: black;
+    display: inline-block;
+  }
+}
 header .container nav .right_nav .icon_box i:nth-child(4) {
+  display: inline-block;
   background-color: rgba(247, 247, 0, 0.914);
   color: black;
   font-weight: 700;
   border-radius: 50%;
   width: 40px;
-  height: 40px;
+  height: 40pxx;
   padding-top: 7px;
   padding-left: 10px;
   display: inline-block;
+}
+@media (max-width: 768px) {
+  header .container nav .right_nav .icon_box i:nth-child(4) {
+    height: 38pxx;
+    display: inline-block;
+  }
 }
 
 #events {
