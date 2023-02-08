@@ -855,6 +855,37 @@ footer .container .row .col-xl-3 .scrty_txt {
   font-size: 14px;
 }
 footer .container .row img {
-  width: 220px;
+  width: 194px;
   margin-left: 30px;
+}
+footer .copyright {
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  footer .copyright {
+    width: auto;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0px 40px;
+  }
+}
+footer .copyright .copyright_right {
+  display: flex;
+  width: 275px;
+}
+@media (max-width: 768px) {
+  footer .copyright .copyright_right {
+    margin-top: 10px;
+  }
+}
+footer .copyright .copyright_right .social_links a {
+  background-color: rgb(255, 204, 0);
+  font-size: 35px;
+  padding: 10px;
+}
+footer .copyright .copyright_right .social_links a i {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
