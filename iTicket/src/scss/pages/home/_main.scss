@@ -42,12 +42,16 @@ header{
         @media(max-width:768px){
             display: none;
            }
+           @media(max-width:1024px){
+            display: none;
+        }
     }
     padding-top: 30px;
     @media(max-width:768px){
      padding: 0;
     }
-    .container{
+    .container_head{
+        margin: 0 auto;
         position: relative;
         height: 85vh;
         border-radius: 20px;
@@ -60,9 +64,10 @@ header{
             background-repeat: no-repeat;
             background-size: contain;
             width: auto;
-            height: 300px;
+            height: 25vh;
             border-radius: 0px;
         }
+        
         nav{
             display: flex;
             justify-content: space-around;
@@ -72,7 +77,8 @@ header{
                 width: auto;
                 padding-bottom: -22px;
                 height: 35px;
-                padding-top: 0;
+                padding:0%;
+                
                
             }
             .bi-bar-chart-steps{
