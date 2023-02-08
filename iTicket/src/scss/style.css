@@ -860,10 +860,7 @@ footer .container .row img {
 }
 @media (max-width: 768px) {
   footer .copyright {
-    width: auto;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 0px 40px;
+    padding: 0px 33px;
   }
 }
 footer .copyright .copyright_right {

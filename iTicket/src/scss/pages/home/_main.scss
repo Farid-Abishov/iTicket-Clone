@@ -739,12 +739,8 @@ footer{
     }
     .copyright{
         @media(max-width:768px){
-          width: auto;
-          flex-direction: column;
-          margin: 0 auto;  
-          padding: 0px 40px;
+            padding: 0px 33px;
         }
-      
         .copyright_right{
             display: flex;
             .social_links{       
