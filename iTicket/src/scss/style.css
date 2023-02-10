@@ -21,7 +21,7 @@
 @media (max-width: 768px) {
   .addcart {
     position: fixed;
-    right: 12px;
+    right: 15px;
     top: 500px;
   }
 }
