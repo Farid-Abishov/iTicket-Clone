@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  outline: none;
 }
 
 .addcart {
@@ -22,7 +23,7 @@
   .addcart {
     position: fixed;
     right: 15px;
-    top: 500px;
+    top: 550px;
   }
 }
 .addcart span {
