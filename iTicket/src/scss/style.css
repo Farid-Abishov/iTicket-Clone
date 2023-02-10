@@ -20,7 +20,9 @@
 }
 @media (max-width: 768px) {
   .addcart {
-    display: none;
+    position: fixed;
+    right: 12px;
+    top: 500px;
   }
 }
 .addcart span {

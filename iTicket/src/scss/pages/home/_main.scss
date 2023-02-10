@@ -11,7 +11,10 @@
     padding-top: 7px;
     padding-left: 10px;
     @media(max-width:768px){
-        display: none;
+        position: fixed;
+        right: 12px;
+        top: 500px;
+
        }
     span{
         position: absolute;
